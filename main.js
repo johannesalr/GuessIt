@@ -23,9 +23,9 @@ fetch("champions.json")
     // Changing Innertext for Hints
     title.innerText = `Title: ${randomChampion.title}`;
     type.innerText = randomChampion.partype;
-    tag0.innerText = randomChampion.tags[0];
+    tag0.innerHTML = `<img src="./tags icon/${randomChampion.tags[0]}.png" alt="" id="img-tags" /> ${randomChampion.tags[0]}`;
     if (randomChampion.tags[1] !== undefined) {
-      tag1.innerText = randomChampion.tags[1];
+      tag1.innerHTML = `<img src="./tags icon/${randomChampion.tags[1]}.png" alt="" id="img-tags" /> ${randomChampion.tags[1]}`;
     } else {
       tag1.innerText = "";
     }
@@ -88,9 +88,9 @@ fetch("champions.json")
       randomChampion = randomChamp();
       title.innerText = `Title: ${randomChampion.title}`;
       type.innerText = randomChampion.partype;
-      tag0.innerText = randomChampion.tags[0];
+      tag0.innerHTML = `<img src="./tags icon/${randomChampion.tags[0]}.png" alt="" id="img-tags" /> ${randomChampion.tags[0]}`;
       if (randomChampion.tags[1] !== undefined) {
-        tag1.innerText = randomChampion.tags[1];
+        tag1.innerHTML = `<img src="./tags icon/${randomChampion.tags[1]}.png" alt="" id="img-tags" /> ${randomChampion.tags[1]}`;
       } else {
         tag1.innerText = "";
       }
