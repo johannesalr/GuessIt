@@ -131,3 +131,7 @@ ul li {
   margin-top: 1rem;
   display: none;
 }
+#img-tags {
+  max-width: 40px;
+  max-height: 40px;
+}
