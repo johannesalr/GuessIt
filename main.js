@@ -24,7 +24,11 @@ fetch("champions.json")
     title.innerText = `Title: ${randomChampion.title}`;
     type.innerText = randomChampion.partype;
     tag0.innerText = randomChampion.tags[0];
-    tag1.innerText = randomChampion.tags[1];
+    if (randomChampion.tags[1] !== undefined) {
+      tag1.innerText = randomChampion.tags[1];
+    } else {
+      tag1.innerText = "";
+    }
 
     let champInput;
 
@@ -85,7 +89,11 @@ fetch("champions.json")
       title.innerText = `Title: ${randomChampion.title}`;
       type.innerText = randomChampion.partype;
       tag0.innerText = randomChampion.tags[0];
-      tag1.innerText = randomChampion.tags[1];
+      if (randomChampion.tags[1] !== undefined) {
+        tag1.innerText = randomChampion.tags[1];
+      } else {
+        tag1.innerText = "";
+      }
       result.innerText = "";
       console.log(randomChampion.id);
     });
