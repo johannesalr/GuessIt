@@ -135,3 +135,7 @@ ul li {
   max-width: 40px;
   max-height: 40px;
 }
+
+ul#hints {
+  align-items: center;
+}

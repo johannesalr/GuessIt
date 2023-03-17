@@ -65,6 +65,7 @@ fetch("champions.json")
           // img.src = iconUrl; // Set the icon URL of the champion
           // img.alt = `${champion.name} icon`; // Set the alt attribute of the image
           // li.appendChild(img); // Add the image to the li element
+          // if guessInput.value == "" li.textContent = ""
           li.textContent = champion.name;
           li.addEventListener("click", () => {
             guessInput.value = champion.name;
