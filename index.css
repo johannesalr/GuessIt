@@ -132,10 +132,15 @@ ul li {
   display: none;
 }
 #img-tags {
-  max-width: 40px;
+  max-width: 30px;
   max-height: 40px;
+  padding-right: 0.1rem;
+  padding-left: 0.2rem;
 }
 
-ul#hints {
-  align-items: center;
+li#type {
+  place-self: end;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
