@@ -76,7 +76,7 @@ body {
 
 #hint {
   font-size: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #title {
@@ -84,6 +84,7 @@ body {
   font-weight: bold;
   margin: 0;
   text-align: center;
+  margin-top: 1rem;
 }
 
 /* ul li {
@@ -118,12 +119,6 @@ body {
   margin-top: 1rem;
   display: none;
 }
-#img-tags {
-  max-width: 30px;
-  max-height: 40px;
-  padding-right: 0.1rem;
-  padding-left: 0.2rem;
-}
 
 /* li#type {
   place-self: end;
@@ -137,20 +132,43 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  border: solid black 0.1rem;
+  border-radius: 0.5rem;
+  min-width: 500px;
+  min-height: 250px;
 }
 #hintsContainer ul {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 0.5rem;
-  margin-top: 2rem;
+  /* padding: 0.5rem; */
+  margin-top: 3.5rem;
   align-self: center;
   font-size: 1rem;
   font-weight: 550;
+  border-radius: 1rem;
+  border: solid #3498db 0.1rem;
+  padding: 0.3rem;
 }
 #hintsContainer ul li {
-  place-self: center;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 }
+#hintsContainer #type {
+  place-self: end;
+  margin-bottom: 1.2px;
+}
+
+#hintsContainer #img-tags {
+  max-width: 35px;
+  max-height: 33px;
+  padding-right: 0.1rem;
+  padding-left: 0.2rem;
+}
+
+/* #img-tags {
+
+} */
 
 /* ul#hints {
   margin-top: 2rem;
